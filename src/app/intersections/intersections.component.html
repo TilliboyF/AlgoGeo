@@ -1,0 +1,19 @@
+<div id="box">
+   <svg viewBox="0 0 600 600"
+        height="600"
+        width="600">
+     <circle [attr.cx]="point.x"
+             [attr.cy]="point.y"
+             r="5"
+             fill="red"
+             *ngFor="let point of points"/>
+     <line [attr.x1]="line.p1.x"
+           [attr.y1]="line.p1.y"
+           [attr.x2]="line.p2.x"
+           [attr.y2]="line.p2.y"
+           stroke="black"
+           stroke-width="2"
+           *ngFor="let line of lines"></line>
+   </svg>
+ </div>
+<button (click)="calculateIntersections()">Get Points</button>

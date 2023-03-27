@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xm-12">
+      <form (ngSubmit)="onSubmit()"
+            #f="ngForm">
+        <div class="container">
+          <div class="row">
+          <div class="form-group col">
+            <label for="x">X</label>
+            <input type="number"
+                   min="0"
+                   max="800"
+                   id="x"
+                   required
+                   ngModel
+                   name="x"
+                   class="form-control">
+          </div>
+          <div class="form-group col">
+            <label for="y">Y</label>
+            <input type="number"
+                   min="0"
+                   max="400"
+                   id="y"
+                   required
+                   ngModel
+                   name="y"
+                   class="form-control">
+          </div>
+          <div class="col">
+            <button type="submit"
+                    class="btn btn-primary">Submit</button>
+          </div>
+
+        </div>
+
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>
+

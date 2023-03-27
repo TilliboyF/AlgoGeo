@@ -1,0 +1,46 @@
+.svg {
+    border: solid black;
+
+}
+
+#box {
+    border: 2px solid black;
+    width: 800px;
+    height: 400px;
+    margin-left: 5px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+
+.form {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.form label {
+    margin: 5px 10px 5px 0;
+}
+
+.form input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: black;
+    border-radius: 5px;
+}
+
+.form button {
+    padding: 10px 20px;
+    background-color: dodgerblue;
+    border: 1px solid #ddd;
+    color: white;
+    border-radius: 5px;
+}
+
+.form button:hover {
+    background-color: royalblue;
+}

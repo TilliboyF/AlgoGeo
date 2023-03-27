@@ -1,0 +1,11 @@
+.svg {
+    border: solid black;
+}
+
+#box {
+    border: solid black;
+    width: 800px;
+    height: 400px;
+    margin-left: 20px;
+    margin-top: 20px;
+}

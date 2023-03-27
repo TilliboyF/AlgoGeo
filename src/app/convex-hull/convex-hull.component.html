@@ -1,0 +1,58 @@
+<div id="box">
+   <svg viewBox="0 0 800 400"
+        height="400"
+        width="800">
+     <circle [attr.cx]="point.x"
+             [attr.cy]="point.y"
+             r="3"
+             *ngFor="let point of points"/>
+     <line [attr.x1]="line.p1.x"
+           [attr.y1]="line.p1.y"
+           [attr.x2]="line.p2.x"
+           [attr.y2]="line.p2.y"
+           stroke="black"
+           stroke-width="2"
+           *ngFor="let line of lines"></line>
+   </svg>
+ </div>
+<div>
+
+  <form (ngSubmit)="onSubmit()"
+        #f="ngForm"
+        class="form">
+    <h3>Add a Vector: &nbsp; &nbsp;</h3>
+              <label for="x"><b>X</b></label>
+              <input type="number"
+                     min="0"
+                     max="800"
+                     id="x"
+                     required
+                     ngModel
+                     name="x"
+                     step="5">
+              <label for="y"><b>Y</b></label>
+              <input type="number"
+                     min="0"
+                     max="400"
+                     id="y"
+                     required
+                     ngModel
+                     name="y"
+                     step="5">
+              <button type="submit"
+                      [disabled]="!f.valid">Submit</button>
+      </form>
+</div>
+<hr>
+
+<div class="algorithms">
+  <h1>Algorithms</h1>
+  <button class="btn btn-primary"
+          (click)="calculateHull()">ConvexHull</button>
+  <button class="btn btn-primary"
+          (click)="calculateHull()">ConvexHull</button>
+  <button class="btn btn-primary"
+          (click)="calculateHull()">ConvexHull</button>
+</div>
+
+
