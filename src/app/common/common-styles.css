@@ -1,0 +1,35 @@
+.form {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.form label {
+    margin: 5px 10px 5px 0;
+}
+
+.form input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #9BBAC3;
+    border: 1px solid #285142;
+    color: black;
+    border-radius: 5px;
+}
+
+.norm-button {
+    padding: 10px 20px;
+    background-color: #04AA6D;
+    border: 1px solid #285142;
+    color: white;
+    border-radius: 5px;
+}
+
+.norm-button:hover {
+    background-color: #1C6F50;
+}
+
+.norm-button:disabled {
+    background-color: #333;
+}

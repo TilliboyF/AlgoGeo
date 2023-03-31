@@ -1,6 +1,16 @@
 .svg {
     border: solid black;
+}
 
+hr {
+    margin: 0;
+    color: black;
+    height: 2px;
+    border: 1px solid black;
+}
+
+h1 {
+    margin-top: 0;
 }
 
 #box {
@@ -12,35 +22,35 @@
     border-radius: 5px;
 }
 
-
-.form {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
+.randomInput {
+    width: 75px;
 }
 
-.form label {
-    margin: 5px 10px 5px 0;
+.algorithms {
+    display: inline-block;
+    width: 100%;
 }
 
-.form input {
-    vertical-align: middle;
-    margin: 5px 10px 5px 0;
-    padding: 10px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    color: black;
-    border-radius: 5px;
+.algorithms .norm-button {
+    display: inline-block;
 }
 
-.form button {
-    padding: 10px 20px;
-    background-color: dodgerblue;
-    border: 1px solid #ddd;
-    color: white;
-    border-radius: 5px;
+.algorithms p {
+    display: inline-block;
+    width: 100px;
+    margin-left: 10px;
 }
 
-.form button:hover {
-    background-color: royalblue;
+.inline-block {
+    display: inline-block;
+    width: 29%;
+    border-right: 1px solid black;
+    margin-right: 5px;
 }
+
+.inline-block:last-child {
+    border-right: none;
+}
+
+
+

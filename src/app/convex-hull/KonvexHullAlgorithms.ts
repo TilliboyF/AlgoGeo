@@ -28,8 +28,9 @@ export function simpleAlgo(points: Vector[]): Line[] {
   return output;
 }
 
-export function divideAndConquer(points: Vector[]) {
-
+//TODO finish implementation of divide&Conquer Algo
+export function divideAndConquer(points: Vector[]): Line[] {
+  return [];
 }
 
 export function grahamScan(points: Vector[]): Line[] {
@@ -124,6 +125,9 @@ function mergeHulls(leftHull: Vector[], rightHull: Vector[]): Vector[] {
   return [];
 }
 
+/**
+ * @Enum Orientation
+ */
 enum Orientation {
   LEFT = -1, RIGHT = 1, NULL = 0
 }

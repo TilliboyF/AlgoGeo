@@ -40,19 +40,51 @@
                      name="y"
                      step="5">
               <button type="submit"
+                      class="norm-button"
                       [disabled]="!f.valid">Submit</button>
+
       </form>
 </div>
+<div>
+  <form (ngSubmit)="randomizePoints()"
+        [formGroup]="randomizeFrom"
+        class="form">
+    <label for="amount"><h3>Amount of Random Points: </h3></label>
+    <input type="number"
+           id="amount"
+           class="randomInput"
+           [value]="100"
+           formControlName="amount"
+           step="10"
+           min="0"
+           max="2000">
+    <button type="submit"
+            class="norm-button">Randomize Points</button>
+  </form>
+</div>
+
 <hr>
 
+<h1>Algorithms</h1>
 <div class="algorithms">
-  <h1>Algorithms</h1>
-  <button class="btn btn-primary"
-          (click)="calculateHull()">ConvexHull</button>
-  <button class="btn btn-primary"
-          (click)="calculateHull()">ConvexHull</button>
-  <button class="btn btn-primary"
-          (click)="calculateHull()">ConvexHull</button>
+  <div class="inline-block">
+    <button class="norm-button"
+            (click)="simpleAlgo()"
+            [disabled]="points.length <= 0">simpleAlgo</button>
+    <p>Time: {{simpleAlgoTime}} ms</p>
+  </div>
+  <div class="inline-block">
+    <button class="norm-button"
+            (click)="divideAndConquer()"
+            [disabled]="points.length <= 0">Divide&Conquer</button>
+    <p>Time: {{divideAndConquerTime}} ms</p>
+  </div>
+  <div class="inline-block">
+    <button class="norm-button"
+            (click)="grahamScam()"
+            [disabled]="points.length <= 0">GrahamScam</button>
+    <p>Time: {{grahamScamTime}} ms</p>
+  </div>
 </div>
 
 

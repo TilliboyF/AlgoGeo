@@ -48,6 +48,7 @@
               "src/assets"
             ],
             "styles": [
+              "src/app/common/common-styles.css",
               "src/styles.css"
             ],
             "scripts": []

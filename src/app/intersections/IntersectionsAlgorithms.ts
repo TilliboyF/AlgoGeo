@@ -17,7 +17,9 @@ export function calculateIntersections(segments: Line[]): Vector[] {
 }
 
 /**
- * https://stackoverflow.com/questions/563198/how-do-you-detect-where-two-line-segments-intersect
+ *
+ *  @link Vector
+ *  https://stackoverflow.com/questions/563198/how-do-you-detect-where-two-line-segments-intersect
  * @param l1 line 1
  * @param l2 line 2
  * @return Vector intersection Point or null
